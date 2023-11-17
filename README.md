@@ -75,7 +75,7 @@ This is a POC for the type of project Poodle's Pizza would be looking at buildin
 
 ### Prerequisites
 
-Ensure you have the current version of Node installed. [https://nodejs.org/en/download]
+Ensure you have the current version of Node installed. https://nodejs.org/en/download
 
 Install npm
 * npm
@@ -85,8 +85,8 @@ Install npm
 
 ### Installation
 
-1. Sign up for a free Telnyx account at: [https://example.com]
-2. Follow the Telnyx Portal Setup Guide: [https://developers.telnyx.com/docs/v2/messaging/messages/tutorials/quickstarts/mission_control_portal_set_up/]
+1. Sign up for a free Telnyx account at: https://example.com
+2. Follow the Telnyx Portal Setup Guide: https://developers.telnyx.com/docs/v2/messaging/messages/tutorials/quickstarts/mission_control_portal_set_up/
 
 3. Clone the repo
    ```sh
@@ -100,24 +100,6 @@ Install npm
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,9 +130,8 @@ Project Link: [https://github.com/bestbrobradley/telnyx](https://github.com/best
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+This ReadMe was created from the template provided by @othneildrew at https://github.com/othneildrew/Best-README-Template
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
