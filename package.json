@@ -1,0 +1,24 @@
+{
+  "name": "pizzapoodlepoc",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "send.js",
+  "scripts": {
+    "start": "node send.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BestBroBradley/telnyx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BestBroBradley/telnyx/issues"
+  },
+  "homepage": "https://github.com/BestBroBradley/telnyx#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "telnyx": "^1.25.5"
+  }
+}
