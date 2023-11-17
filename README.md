@@ -75,7 +75,7 @@ This is a POC for the type of project Poodle's Pizza would be looking at buildin
 
 ### Prerequisites
 
-Ensure you have the current version of Node installed. [https://nodejs.org/en/download] (https://nodejs.org/en/download)
+Ensure you have the current version of Node installed. [https://nodejs.org/en/download]
 
 Install npm
 * npm
@@ -85,8 +85,8 @@ Install npm
 
 ### Installation
 
-1. Sign up for a free Telnyx account at: [https://example.com](https://example.com)
-2. Follow the Telnyx Portal Setup Guide: [https://developers.telnyx.com/docs/v2/messaging/messages/tutorials/quickstarts/mission_control_portal_set_up/] (https://developers.telnyx.com/docs/v2/messaging/messages/tutorials/quickstarts/mission_control_portal_set_up/)
+1. Sign up for a free Telnyx account at: [https://example.com]
+2. Follow the Telnyx Portal Setup Guide: [https://developers.telnyx.com/docs/v2/messaging/messages/tutorials/quickstarts/mission_control_portal_set_up/]
 
 3. Clone the repo
    ```sh
