@@ -38,7 +38,6 @@ async function sendReply(text) {
                 return (err)
             } else {
             // asynchronously called
-            console.log(response);
             return (response)
             }
         }
@@ -49,7 +48,6 @@ async function sendReply(text) {
 // Function for handling inbound webhooks
 
 app.post('/webhook', (req, res) => {
-    console.log(req.body)
     const messageId = req.body.data.payload.id
     const direction = req.body.data.payload.direction
     const attempt = req.body.meta.attempt

@@ -3,9 +3,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/bestbrobradley/telnyx">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">Poodle's Pizza POC</h3>
 
@@ -57,9 +54,9 @@
 
 ### Built With
 
-* [![Node][Next.js]][Next-url]
-* [![Javascript][Javascript]][React-url]
-* [![Telnyx Node SDK][Telnyx Node SDK]][Vue-url]
+* Node.js (https://nodejs.org/en/)
+* Telnyx Node SDK
+* Express
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,15 +98,6 @@ Install npm
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
@@ -130,13 +118,3 @@ This ReadMe was created from the template provided by @othneildrew at https://gi
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
