@@ -48,8 +48,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
@@ -93,6 +91,8 @@ Install npm
 5. Create an .env file in your working directory called `.env` with the following contents:
 
    API_KEY = Insert Telnyx API key
+
+6. Ensure you have the ability to ingest webhooks, through your own systems or a product like Ngrok.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
