@@ -51,7 +51,7 @@ app.post('/webhook', (req, res) => {
     const messageId = id
     // If not a new inbound message, disregard
     if (direction === "outbound" || prevIds.includes(messageId)) {
-        console.log("exited")
+        console.log("Disregarded activity")
         return
     // If new inbound message, continue onward
     } else if (direction === "inbound") {
