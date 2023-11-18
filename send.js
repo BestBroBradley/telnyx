@@ -10,7 +10,6 @@ const port = 8000;
 app.listen(port, () => console.log(`App running on port ${port}`));
 
 // Function for determining correct reply
-
 async function createReply(message) {
     const caseCorrected = message.toLowerCase() // Normalizing word case
     switch (caseCorrected) {
@@ -23,21 +22,21 @@ async function createReply(message) {
     }
 }
 
-let id = ""
+let prevIds = [] // Failsafe to ensure duplicate messages aren't ingested, not inherently scalable
 
-async function sendReply(text) {
+// Function for formatting the reply for Telnyx
+async function sendReply(text, sender) {
     const reply = await createReply(text)
     const results = await telnyx.messages.create(
         {
             'from': '+17209534352', // Your Telnyx number
-            'to': '+13039991581',
+            'to': sender, // Desired recipient
             'text': reply
         },
         function (err, response) {
             if (err) {as
                 return (err)
             } else {
-            // asynchronously called
             return (response)
             }
         }
@@ -46,19 +45,19 @@ async function sendReply(text) {
 }
 
 // Function for handling inbound webhooks
-
 app.post('/webhook', (req, res) => {
-    const messageId = req.body.data.payload.id
-    const direction = req.body.data.payload.direction
-    const attempt = req.body.meta.attempt
-    if (direction === "outbound" || messageId === id) {
+    const {from, id, direction, text} = req.body.data.payload
+    const sender = from.phone_number
+    const messageId = id
+    // If not a new inbound message, disregard
+    if (direction === "outbound" || prevIds.includes(messageId)) {
         console.log("exited")
         return
+    // If new inbound message, continue onward
     } else if (direction === "inbound") {
-        id = messageId
-        const text = req.body.data.payload.text
+        prevIds.push(messageId)
         console.log(`New message: ${text}`)
-        sendReply(text)
+        sendReply(text, sender)
         return
     }
     return
